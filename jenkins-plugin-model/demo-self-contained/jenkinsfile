@@ -40,7 +40,7 @@ pipeline {
     stages {
         stage('Install .NET 7 SDK') {
             steps {
-                yum install dotnet-sdk-7.0 -y
+                sudo yum install dotnet-sdk-7.0 -y
             }
         }
 
